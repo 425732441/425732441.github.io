@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://425732441.github.io/blog/en/Hexo-Theme-LiveMyLife/</loc>
+    <loc>https://425732441.github.io/blog/blog/en/Hexo-Theme-LiveMyLife/</loc>
     <lastmod>2020-04-16</lastmod>
   </url>
   <url>
-    <loc>https://425732441.github.io/blog/cn/Hexo-Theme-LiveMyLife/</loc>
+    <loc>https://425732441.github.io/blog/blog/cn/Hexo-Theme-LiveMyLife/</loc>
     <lastmod>2020-04-16</lastmod>
   </url>
 </urlset> 
