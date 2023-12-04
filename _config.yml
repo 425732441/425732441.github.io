@@ -371,5 +371,5 @@ gitter:
 ##
 deploy:
   type: git
-  repo: git@gitee.com:zhanghualei/zhanghualei.gitee.io.git # or https://gitee.com/<yourAccount>/<repo>
-  branch: master
+  repo: git@github.com:425732441/425732441.github.io.git
+  branch: main
