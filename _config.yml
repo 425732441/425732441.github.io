@@ -26,6 +26,7 @@ url: https://425732441.github.io      # Note: don't forget to modify the CNAME f
 root: /
 permalink: :lang/:title/
 permalink_defaults:
+  lang: cn
 
 # CDN Setting
 ## Docs: https://www.jsdelivr.com/?docs=gh
@@ -39,7 +40,8 @@ permalink_defaults:
 # Custom Setting Start
 
 # Site settings
-SEOTitle: 一个Javaer
+SEOTitle: 一个码农的点点滴滴
+keywords: "IT,Blog,Live My Life"
 email: ourmadyouth@gmail.com
 description: "It's an IT blog..."
 keyword: "livemylife,IT blog,Blog"
@@ -173,7 +175,7 @@ skip_render:
 
 
 # Writing
-new_post_name: :lang/:title.md    # File name of new posts
+new_post_name: :lang/:year/:month/:day/:title.md    # File name of new posts
 default_layout: post
 auto_spacing: true
 titlecase: false    # Transform title into titlecase
