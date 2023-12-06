@@ -10,8 +10,8 @@ timezone: Asia/Shanghai
 
 # Internationalization (i18n) Setting
 language: # At present, only en、cn and tw are supported. You can customize the language，refer to `languages/en.yml`.
-  - en
   - cn
+  - en
 langselect:
   enable: false # If open, it will automatically generation lang-select button.This button can jump in articles in different languages, but the articles must have the same name.
   options: # langselect button display options
