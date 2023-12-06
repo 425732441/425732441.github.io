@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://425732441.github.io/cn/HeapDumpOnOutOfMemoryError%E6%97%A0%E6%B3%95%E7%94%9F%E6%88%90dump%E6%96%87%E4%BB%B6/</loc>
+    
+    <lastmod>2023-12-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://425732441.github.io/tags/index.html</loc>
     
     <lastmod>2023-12-04</lastmod>
@@ -73,6 +80,20 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://425732441.github.io/tags/Java/</loc>
+    <lastmod>2023-12-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://425732441.github.io/tags/OOM/</loc>
+    <lastmod>2023-12-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -84,6 +105,20 @@
   
   <url>
     <loc>https://425732441.github.io/categories/Hexo-Theme-LiveMyLife/</loc>
+    <lastmod>2023-12-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://425732441.github.io/categories/Java/</loc>
+    <lastmod>2023-12-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://425732441.github.io/categories/Java/JVM/</loc>
     <lastmod>2023-12-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
