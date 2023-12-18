@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://425732441.github.io/cn/JPA-transactional-when-executing-update-or-delete-query/</loc>
+    <lastmod>2023-12-18</lastmod>
+  </url>
+  <url>
     <loc>https://425732441.github.io/cn/HeapDumpOnOutOfMemoryError%E6%97%A0%E6%B3%95%E7%94%9F%E6%88%90dump%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2023-12-06</lastmod>
   </url>

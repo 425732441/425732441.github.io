@@ -452,6 +452,48 @@
   <!-- top end -->
   
 
+  <a href="/cn/JPA-transactional-when-executing-update-or-delete-query/">
+    <h2 class="post-title">
+      JPA执行update/delete语句时要显性添加事务
+    </h2>
+    <h3 class="post-subtitle">
+      
+    </h3>
+    <div class="post-content-preview">
+      JPA事务问题Executing an update/delete query
+当使用repository执行update语句时除了加@Query和@Modifying注解外，还需要显式地使用@Transactional注解，否则会抛出异常。
+异常错误截图：
+
+解决方法
+在repository中添加@Transactional注解，如下：
+@Repository
+public interfa......
+    </div>
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by hualeizhang on
+    2023-12-18
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#spring-data" title="spring-data">spring-data</a>
+    
+    <a href="/tags/#jpa" title="jpa">jpa</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
   <a href="/cn/HeapDumpOnOutOfMemoryError无法生成dump文件/">
     <h2 class="post-title">
       HeapDumpOnOutOfMemoryError无法生成dump文件
@@ -628,6 +670,14 @@ Gitee 仓库地址：ht......
     <a href="/tags/#OOM" title="OOM" rel="1">OOM</a>
     
     
+    
+    <a href="/tags/#spring-data" title="spring-data" rel="1">spring-data</a>
+    
+    
+    
+    <a href="/tags/#jpa" title="jpa" rel="1">jpa</a>
+    
+    
   </div>
 </section>
 
@@ -688,6 +738,10 @@ Gitee 仓库地址：ht......
 <div class="widget">
   <ul>
     
+    <a href="cn/JPA-transactional-when-executing-update-or-delete-query/">
+      <li>JPA执行update/delete语句时要显性添加事务</li>
+    </a>
+    
     <a href="cn/HeapDumpOnOutOfMemoryError%E6%97%A0%E6%B3%95%E7%94%9F%E6%88%90dump%E6%96%87%E4%BB%B6/">
       <li>HeapDumpOnOutOfMemoryError无法生成dump文件</li>
     </a>
@@ -722,7 +776,7 @@ Gitee 仓库地址：ht......
 
 <h5><a href="/archives/">archives</a></h5>
 <div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2023/12/">December 2023</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
+  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2023/12/">December 2023</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
 </div>
 
 
@@ -748,6 +802,10 @@ Gitee 仓库地址：ht......
     
     <a href="/categories/#JVM">
       <li>JVM</li>
+    </a>
+    
+    <a href="/categories/#Spring">
+      <li>Spring</li>
     </a>
     
   </ul>
