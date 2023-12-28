@@ -51,7 +51,7 @@ header-img: "img/scenery/about_bg.jpg"
 
 > Neo Peng：https://zhile.io
 >
-> 李卫民：https://www.funtl.com/zh/guide
+> dunwu：https://dunwu.github.io/blog
 >
 > duanxz：https://www.cnblogs.com/duanxz/tag
 >
