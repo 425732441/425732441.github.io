@@ -406,7 +406,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">84</span> In Total
+              Words <span class="post-count">93</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -468,9 +468,18 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <h1 id="JPA事务问题Executing-an-update-delete-query"><a href="#JPA事务问题Executing-an-update-delete-query" class="headerlink" title="JPA事务问题Executing an update/delete query"></a>JPA事务问题Executing an update/delete query</h1><p>当使用repository执行update语句时除了加@Query和@Modifying注解外，还需要显式地使用@Transactional注解，否则会抛出异常。<br>异常错误截图：<br><img src="error_trace.png" alt="error_trace.png"></p>
-<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>在repository中添加@Transactional注解，如下：</p>
-<p>```java<br>@Repository<br>public interface UserRepository extends JpaRepository<User, Long> {<br>    @Transactional<br>    @Modifying<br>    @Query(“update User u set u.name =?1 where u.id =?2”)<br>}</p>
+        <h1>JPA事务问题Executing an update/delete query</h1>
+<p>当使用repository执行update语句时除了加@Query和@Modifying注解外，还需要显式地使用@Transactional注解，否则会抛出异常。<br>
+异常错误截图：<br>
+<img src="error_trace.png" alt="error_trace.png"></p>
+<h1>解决方法</h1>
+<p>在repository中添加@Transactional注解，如下：</p>
+<pre><code class="language-java">@Repository
+public interface UserRepository extends JpaRepository&lt;User, Long&gt; &#123;
+    @Transactional
+    @Modifying
+    @Query(&quot;update User u set u.name =?1 where u.id =?2&quot;)
+&#125;</code></pre>
 
 
         <hr>
@@ -616,7 +625,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">目录</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#JPA%E4%BA%8B%E5%8A%A1%E9%97%AE%E9%A2%98Executing-an-update-delete-query"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">JPA事务问题Executing an update&#x2F;delete query</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">解决方法</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">JPA事务问题Executing an update&#x2F;delete query</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">解决方法</span></a></li></ol>
         
         </div>
       </aside>
