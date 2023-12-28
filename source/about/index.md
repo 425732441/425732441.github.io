@@ -49,8 +49,6 @@ header-img: "img/scenery/about_bg.jpg"
 
 ## Follow With Interest Blogs
 
-> Neo Peng：https://zhile.io
->
 > dunwu：https://dunwu.github.io/blog
 >
 > duanxz：https://www.cnblogs.com/duanxz/tag
