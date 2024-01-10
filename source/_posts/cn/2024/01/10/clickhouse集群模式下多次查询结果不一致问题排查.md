@@ -5,7 +5,10 @@ header-img: /img/header_img/lml_bg.jpg
 date: 2024-01-10 16:00:54
 subtitle:
 tags:
+- Java
+- Clickhouse
 categories:
+- Java
 ---
 # clickhouse集群模式下多次查询结果不一致问题排查
 ## 问题描述
