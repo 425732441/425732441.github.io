@@ -139,7 +139,7 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="https://425732441.github.io/cn/">
+  <link rel="canonical" href="https://425732441.github.io/categories/mysql/DB/">
   <title>
     
       一个码农的点点滴滴
@@ -358,9 +358,9 @@
     }
 
     header.intro-header {
-       /*config*/
-        background-image: var(--intro-header-background-image-url-home);
-        /* background-image: url('/img/header_img/newhome_bg.jpg'); */
+       /*page*/
+        background-image: var(--intro-header-background-image-url-page);
+        /* background-image: url('/img/header_img/archive_bg2.jpg'); */
       
     }
 
@@ -442,368 +442,162 @@
             ">
 
       <!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
+      <!-- 归档列表 -->
 
-
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/使用sysbench进行MySQL性能基准测试/">
-    <h2 class="post-title">
-      使用sysbench进行MySQL性能基准测试
-    </h2>
-    <h3 class="post-subtitle">
       
-    </h3>
-    <div class="post-content-preview">
-      使用sysbench进行MySQL性能基准测试安装sysbench1sudo yum install sysbench 
-测试数据准备创建数据库1create database sbtest;
-创建数据12# prepare 命令sysbench oltp_common.lua --time=300 --mysql-host=xx.xx.xx.xx --mysql-port=3306 --m......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by hualeizhang on
-    2024-02-02
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#mysql优化" title="mysql优化">mysql优化</a>
-    
-  </div>
-  
 
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/mysql索引类型/">
-    <h2 class="post-title">
-      mysql索引类型
-    </h2>
-    <h3 class="post-subtitle">
+      <!-- 归档列表 -->
       
-    </h3>
-    <div class="post-content-preview">
-      mysql索引类型1. 普通索引是最基本的索引，它没有任何限制。它有以下几种创建方式：
-（1）直接创建索引1CREATE INDEX index_name ON table(column(length))
-（2）修改表结构的方式添加索引1ALTER TABLE table_name ADD INDEX index_name ON (column(length))
-（3）创建表的时候同时创建索......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by hualeizhang on
-    2024-01-16
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#mysql" title="mysql">mysql</a>
-    
-    <a href="/tags/#index" title="index">index</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/spring事务失效的几个场景/">
-    <h2 class="post-title">
-      spring事务失效的几个场景
-    </h2>
-    <h3 class="post-subtitle">
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2024">
+          <span class="tag-text">2024</span>
+        </span>
+        <ul>
+          
+          <li>
+            02-02
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/cn/使用sysbench进行MySQL性能基准测试/" style="color: #0085a1">
+              <span>
+                使用sysbench进行MySQL性能基准测试
+                
+                -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            01-16
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/cn/mysql索引类型/" style="color: #0085a1">
+              <span>
+                mysql索引类型
+                
+                -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            01-16
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/cn/spring事务失效的几个场景/" style="color: #0085a1">
+              <span>
+                spring事务失效的几个场景
+                
+                -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            01-10
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/cn/clickhouse集群模式下多次查询结果不一致问题排查/" style="color: #0085a1">
+              <span>
+                clickhouse集群模式下多次查询结果不一致问题排查
+                
+                -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            01-10
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/cn/undertow在springboot下并发优化/" style="color: #0085a1">
+              <span>
+                undertow在springboot下并发优化
+                
+                -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
       
-    </h3>
-    <div class="post-content-preview">
-      spring事务失效的几个场景
-1、抛出检查异常
-如下代码会抛出检查异常，spring事务不会回滚
-1234567@Transactionalpublic void transactionTest() throws IOException&#123;    User user = new User();    UserService.insert(user);    throw new IO......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by hualeizhang on
-    2024-01-16
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#Java" title="Java">Java</a>
-    
-    <a href="/tags/#Spring" title="Spring">Spring</a>
-    
-    <a href="/tags/#Spring事务" title="Spring事务">Spring事务</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/clickhouse集群模式下多次查询结果不一致问题排查/">
-    <h2 class="post-title">
-      clickhouse集群模式下多次查询结果不一致问题排查
-    </h2>
-    <h3 class="post-subtitle">
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2023">
+          <span class="tag-text">2023</span>
+        </span>
+        <ul>
+          
+          <li>
+            12-18
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/cn/JPA-transactional-when-executing-update-or-delete-query/" style="color: #0085a1">
+              <span>
+                JPA执行update/delete语句时要显性添加事务
+                
+                -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            12-06
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/cn/HeapDumpOnOutOfMemoryError无法生成dump文件/" style="color: #0085a1">
+              <span>
+                HeapDumpOnOutOfMemoryError无法生成dump文件
+                
+                -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            12-04
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/cn/验证二叉搜索树/" style="color: #0085a1">
+              <span>
+                验证二叉搜索树
+                
+                -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
       
-    </h3>
-    <div class="post-content-preview">
-      clickhouse集群模式下多次查询结果不一致问题排查问题描述项目某个springboot服务通过ELB连接clickhouse集群，界面查询时经常出现两次查询的结果不一致的情况。
-排查过程1. 排查springboot动态数据源由于业务需要，在同一个页面功能的查询中可能查到clickhouse中多个数据库，springboot服务使用了动态数据源，所以通过增加日志打印当前数据源确认动态数......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by hualeizhang on
-    2024-01-10
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#Java" title="Java">Java</a>
-    
-    <a href="/tags/#Clickhouse" title="Clickhouse">Clickhouse</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/undertow在springboot下并发优化/">
-    <h2 class="post-title">
-      undertow在springboot下并发优化
-    </h2>
-    <h3 class="post-subtitle">
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2020">
+          <span class="tag-text">2020</span>
+        </span>
+        <ul>
+          
+          <li>
+            04-17
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/cn/cn-Hexo-Theme-LiveMyLife/" style="color: #0085a1">
+              <span>
+                Hexo-Theme-LiveMyLife
+                
+                -- cn
+                
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
       
-    </h3>
-    <div class="post-content-preview">
-      关于Springboot的Undertow并发优化项目中遇到的问题：某个服务在并发较高且接口响应时间较长时，经常会出现没有足够的线程可用，体现在前端就是接口超时。
-问题分析undertow在处理请求方面主要有两个配置一个是io线程数，一个是worker线程数。具体配置如下(以springboot配置为例)：12345678server:  port: 8888  undertow:    t......
     </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by hualeizhang on
-    2024-01-10
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#Java" title="Java">Java</a>
-    
-    <a href="/tags/#Springboot" title="Springboot">Springboot</a>
-    
-    <a href="/tags/#Undertow" title="Undertow">Undertow</a>
-    
   </div>
-  
-
 </div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/JPA-transactional-when-executing-update-or-delete-query/">
-    <h2 class="post-title">
-      JPA执行update/delete语句时要显性添加事务
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      JPA事务问题Executing an update/delete query
-当使用repository执行update语句时除了加@Query和@Modifying注解外，还需要显式地使用@Transactional注解，否则会抛出异常。
-异常错误截图：
-
-解决方法
-在repository中添加@Transactional注解，如下：
-@Repository
-public interfa......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by hualeizhang on
-    2023-12-18
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#spring-data" title="spring-data">spring-data</a>
-    
-    <a href="/tags/#jpa" title="jpa">jpa</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/HeapDumpOnOutOfMemoryError无法生成dump文件/">
-    <h2 class="post-title">
-      HeapDumpOnOutOfMemoryError无法生成dump文件
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      关于HeapDumpOnOutOfMemoryError无法生成dump文件的问题问题背景最近公司的一个项目，因为JVM内存大小设置问题导致应用出现OOM，但看到指定的HeapDumpPath路径中没有最新的dump文件产生，导致无法定位问题。遂决定看看为什么不生成新文件。
-问题复现 使用现有项目在本地环境中，设置JVM参数：-XX:+HeapDumpOnOutOfMemoryError -......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by hualeizhang on
-    2023-12-06
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#Java" title="Java">Java</a>
-    
-    <a href="/tags/#OOM" title="OOM">OOM</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/验证二叉搜索树/">
-    <h2 class="post-title">
-      验证二叉搜索树
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      验证二叉搜索树
-题目描述
-leetcode NO-98. 难度中等
-给你一个二叉树的根节点 root ，判断其是否是一个有效的二叉搜索树。
-有效 二叉搜索树定义如下：
-
-节点的左子树只包含 小于 当前节点的数。
-节点的右子树只包含 大于 当前节点的数。
-所有左子树和右子树自身必须也是二叉搜索树。
-
-示例 1：
-
-输入： root = [2,1,3]
-输出： true
-示例 2：
-
-输入：  ......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by hualeizhang on
-    2023-12-04
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#算法" title="算法">算法</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/cn-Hexo-Theme-LiveMyLife/">
-    <h2 class="post-title">
-      Hexo-Theme-LiveMyLife
-    </h2>
-    <h3 class="post-subtitle">
-      A succinct hexo theme...
-    </h3>
-    <div class="post-content-preview">
-      
-移植 Hux Blog 的主题，感谢 Huxpro 设计了如此完美的主题。
-由 Vincent 创建的 LiveMyLife 的主题修改来源 YenYuHsuan，参考主题 dusign、Utone，感谢 dusign、Utone。
-
-仓库
-Github 仓库地址：https://github.com/V-Vincen/hexo-theme-livemylife
-Gitee 仓库地址：ht......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by hualeizhang on
-    2020-04-17
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife">Hexo-Theme-LiveMyLife</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-
-  <!-- Pager -->
-  <ul class="pager">
-    
-    
-  </ul>
 
 
       <!-- 如果开启评论功能 -->
@@ -957,23 +751,23 @@ Gitee 仓库地址：ht......
 <div class="widget">
   <ul>
     
-    <a href="%E4%BD%BF%E7%94%A8sysbench%E8%BF%9B%E8%A1%8CMySQL%E6%80%A7%E8%83%BD%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95/">
+    <a href="../../../cn/%E4%BD%BF%E7%94%A8sysbench%E8%BF%9B%E8%A1%8CMySQL%E6%80%A7%E8%83%BD%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95/">
       <li>使用sysbench进行MySQL性能基准测试</li>
     </a>
     
-    <a href="mysql%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/">
+    <a href="../../../cn/mysql%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/">
       <li>mysql索引类型</li>
     </a>
     
-    <a href="spring%E4%BA%8B%E5%8A%A1%E5%A4%B1%E6%95%88%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9C%BA%E6%99%AF/">
+    <a href="../../../cn/spring%E4%BA%8B%E5%8A%A1%E5%A4%B1%E6%95%88%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9C%BA%E6%99%AF/">
       <li>spring事务失效的几个场景</li>
     </a>
     
-    <a href="clickhouse%E9%9B%86%E7%BE%A4%E6%A8%A1%E5%BC%8F%E4%B8%8B%E5%A4%9A%E6%AC%A1%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/">
+    <a href="../../../cn/clickhouse%E9%9B%86%E7%BE%A4%E6%A8%A1%E5%BC%8F%E4%B8%8B%E5%A4%9A%E6%AC%A1%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C%E4%B8%8D%E4%B8%80%E8%87%B4%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/">
       <li>clickhouse集群模式下多次查询结果不一致问题排查</li>
     </a>
     
-    <a href="undertow%E5%9C%A8springboot%E4%B8%8B%E5%B9%B6%E5%8F%91%E4%BC%98%E5%8C%96/">
+    <a href="../../../cn/undertow%E5%9C%A8springboot%E4%B8%8B%E5%B9%B6%E5%8F%91%E4%BC%98%E5%8C%96/">
       <li>undertow在springboot下并发优化</li>
     </a>
     
@@ -999,7 +793,7 @@ Gitee 仓库地址：ht......
 
 <h5><a href="/archives/">archives</a></h5>
 <div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../archives/2024/02/">February 2024</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../archives/2024/01/">January 2024</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="../archives/2023/12/">December 2023</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="../archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
+  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../../archives/2024/02/">February 2024</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../../archives/2024/01/">January 2024</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../../archives/2023/12/">December 2023</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../../archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
 </div>
 
 
